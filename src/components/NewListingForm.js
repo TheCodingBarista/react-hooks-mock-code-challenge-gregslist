@@ -10,7 +10,7 @@ function NewListingForm({ onAddListing }) {
         fetch("http://localhost:6001/listings", {
             method: "POST",
             headers: {
-                "Cnotent-Type": "application/json"
+                "Content-Type": "application/json"
             },
             body: JSON.stringify(formData),
         })
